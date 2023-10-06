@@ -1,0 +1,406 @@
+:root {
+  --bg-body: #141414;
+  --bg-body2: #242424;
+  --black: #151515;
+  --dark-gray: #242424;
+  --green: #72b726;
+  --gray: #d9d9d9;
+  --purple: #6e07f3;
+  --dark-blue: #0d2438;
+  --text1: #ffffff;
+  --text2: #d9d9d9;
+  --font-header: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  --font-hero: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Space Grotesk";
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-body);
+  color: var(--text1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.flexbox-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  height: 150px;
+}
+
+.header-social {
+  margin-left: 1.5rem;
+}
+
+.wrapper {
+  width: 90%;
+  height: 100%;
+  padding: 0 12.5%;
+  margin: auto;
+
+  @media (max-width: 1110px) {
+    padding: 0 3%;
+  }
+
+  @media (max-width: 700px) {
+    padding: 0 2%;
+  }
+}
+
+.header-xl {
+  font-size: var(--font-hero);
+}
+
+/***************************Hero***************************/
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 1750px) {
+  .overflow-text {
+    white-space: nowrap;
+  }
+}
+.hero-about {
+  width: 50%;
+  margin: 2rem 0 5rem 0;
+}
+
+.hero-img {
+  margin-left: -80px;
+  z-index: -1;
+}
+
+/* .hero-circle{
+  position: absolute;
+  top: -7rem;
+  left: 10rem;
+  z-index: -1;
+} */
+
+.hero-text {
+  /* width: 900px; */
+  text-align: left;
+}
+/* .hero-greeting{
+  font-size: var(--font-hero);
+} */
+
+.contact-me {
+  border-bottom: solid 2px #72b726;
+  /* margin-bottom: 2rem; */
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.bottom-border {
+  border-bottom: var(--gray) solid 2px;
+  padding-bottom: 5rem;
+}
+
+.underline {
+  border-bottom: #72b726 solid 5px;
+}
+
+/*------------------------Skills------------------------*/
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-item {
+  /* flex: 1; */
+  text-align: left;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills-item h3 {
+  /* font-size: 2rem; */
+  font-size: clamp(1rem, 0.165rem + 3.5555vw, 1.5rem);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+
+}
+
+.skills-bar {
+  height: 10px;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.skills-bar .html {
+  width: 95%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+
+}
+
+.skills-bar .css {
+  width: 85%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.skills-bar .javascript {
+  width: 80%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.skills-bar .php {
+  width: 70%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.skills-bar .nodejs {
+  width: 60%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.skills-bar .photoshop {
+  width: 80%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.skills-bar .mysql {
+  width: 90%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.skills-bar .jquery {
+  width: 70%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.skills-bar .wordpress {
+  width: 70%;
+  height: 100%;
+  background-color: #72b726;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+/*------------------------Projects------------------------*/
+/* .projects h1{
+    font-size: var(--font-hero);
+} */
+
+.projects {
+  /* position: relative; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: left;
+  flex-direction: column;
+}
+
+
+
+.projects-item-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projects-item {
+  flex: 1 1 0;
+  margin: 0 1rem;
+}
+
+.projects-tags {
+  display: flex;
+  justify-content: left;
+}
+
+.tags {
+  margin-right: 1rem;
+}
+
+.projects-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/**************************contact*****************/
+
+.bg-less-dark {
+  background-color: var(--dark-gray);
+}
+
+.wrapper.contact {
+  width: 100%;
+  padding: 5% 17.5%;
+  margin: auto;
+
+  @media (max-width: 1110px) {
+    padding: 0 3%;
+  }
+
+  @media (max-width: 700px) {
+    padding: 0 2.8%;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 0px;
+  max-width: 47%;
+}
+
+.contact-form {
+  /* flex: 1 1 0; */
+  min-width: 45%;
+}
+
+.contact-text h1{
+  margin: 0;
+}
+
+.fa{
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.number{
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 0 0 0 auto;
+}
+
+input,
+button,
+textarea {
+  color: #fff;
+  background-color: transparent;
+  padding: 1.5rem;
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text1);
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 2px dashed;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  outline-color: rgb(182, 15, 15); /* Set the outline color to red */
+}
+
+input:required:valid:focus,
+textarea:required:valid:focus {
+  outline-color: #72b726; /* Set the outline color to red */
+}
+
+.btn {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: solid 2px #72b726;
+  padding-bottom: 5px;
+}
+
+/**************************fotter*****************/
+
+.footer{
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-social:hover svg path {
+  fill: #72b726;
+}
+
