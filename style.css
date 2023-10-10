@@ -94,24 +94,14 @@ a {
   z-index: -1;
 }
 
-/* .hero-circle{
-  position: absolute;
-  top: -7rem;
-  left: 10rem;
-  z-index: -1;
-} */
 
 .hero-text {
-  /* width: 900px; */
   text-align: left;
 }
-/* .hero-greeting{
-  font-size: var(--font-hero);
-} */
+
 
 .contact-me {
   border-bottom: solid 2px #72b726;
-  /* margin-bottom: 2rem; */
   padding-bottom: 5px;
   text-transform: uppercase;
 }
@@ -139,7 +129,6 @@ a {
 }
 
 .skills-item {
-  /* flex: 1; */
   text-align: left;
   flex: 1 1 0;
   display: flex;
@@ -147,7 +136,6 @@ a {
   justify-content: center;
 }
 .skills-item h3 {
-  /* font-size: 2rem; */
   font-size: clamp(1rem, 0.165rem + 3.5555vw, 1.5rem);
   margin-top: 2rem;
   margin-bottom: 0.5rem;
@@ -249,9 +237,7 @@ a {
 } */
 
 .projects {
-  /* position: relative; */
   display: flex;
-  /* align-items: center; */
   justify-content: left;
   flex-direction: column;
 }
@@ -323,7 +309,6 @@ a {
 }
 
 .contact-form {
-  /* flex: 1 1 0; */
   min-width: 45%;
 }
 
@@ -374,12 +359,12 @@ textarea:focus {
 
 input:focus:required:invalid,
 textarea:focus:required:invalid {
-  outline-color: rgb(182, 15, 15); /* Set the outline color to red */
+  outline-color: rgb(182, 15, 15); 
 }
 
 input:required:valid:focus,
 textarea:required:valid:focus {
-  outline-color: #72b726; /* Set the outline color to red */
+  outline-color: #72b726; 
 }
 
 .btn {
@@ -389,6 +374,10 @@ textarea:required:valid:focus {
   cursor: pointer;
   border-bottom: solid 2px #72b726;
   padding-bottom: 5px;
+}
+
+i:hover{
+  color: #72b726;
 }
 
 /**************************fotter*****************/
