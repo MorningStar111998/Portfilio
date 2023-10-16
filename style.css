@@ -94,11 +94,9 @@ a {
   z-index: -1;
 }
 
-
 .hero-text {
   text-align: left;
 }
-
 
 .contact-me {
   border-bottom: solid 2px #72b726;
@@ -117,7 +115,7 @@ a {
 
 /*------------------------Skills------------------------*/
 
-.skills {
+/* .skills {
   display: flex;
   flex-direction: column;
 }
@@ -134,12 +132,16 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+} */
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .skills-item h3 {
   font-size: clamp(1rem, 0.165rem + 3.5555vw, 1.5rem);
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-
 }
 
 .skills-bar {
@@ -154,9 +156,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .css {
@@ -164,8 +164,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .javascript {
@@ -173,8 +172,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .php {
@@ -182,8 +180,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .nodejs {
@@ -191,8 +188,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .photoshop {
@@ -200,8 +196,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .mysql {
@@ -209,8 +204,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .jquery {
@@ -218,8 +212,7 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .skills-bar .wordpress {
@@ -227,14 +220,12 @@ a {
   height: 100%;
   background-color: #72b726;
   border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 /*------------------------Projects------------------------*/
 
-
-.projects {
+/* .projects {
   display: flex;
   justify-content: left;
   flex-direction: column;
@@ -246,6 +237,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+} */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .projects-item {
@@ -265,10 +261,6 @@ a {
 .projects-img {
   width: 100%;
   max-width: 100%;
-}
-
-.invisible {
-  visibility: hidden;
 }
 
 /**************************contact*****************/
@@ -310,16 +302,16 @@ a {
   min-width: 45%;
 }
 
-.contact-text h1{
+.contact-text h1 {
   margin: 0;
 }
 
-.fa{
+.fa {
   margin: 1rem;
   margin-left: 0;
 }
 
-.number{
+.number {
   font-size: 2rem;
 }
 
@@ -357,12 +349,12 @@ textarea:focus {
 
 input:focus:required:invalid,
 textarea:focus:required:invalid {
-  outline-color: rgb(182, 15, 15); 
+  outline-color: rgb(182, 15, 15);
 }
 
 input:required:valid:focus,
 textarea:required:valid:focus {
-  outline-color: #72b726; 
+  outline-color: #72b726;
 }
 
 .btn {
@@ -374,13 +366,13 @@ textarea:required:valid:focus {
   padding-bottom: 5px;
 }
 
-i:hover{
+i:hover {
   color: #72b726;
 }
 
 /**************************fotter*****************/
 
-.footer{
+.footer {
   padding: 2rem 0;
   display: flex;
   align-items: center;
@@ -397,15 +389,14 @@ i:hover{
   overflow: hidden;
 }
 
-
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  opacity: 0; 
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
   display: flex;
   justify-content: center;
