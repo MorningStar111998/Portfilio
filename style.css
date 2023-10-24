@@ -56,7 +56,7 @@ a {
   padding: 0 12.5%;
   margin: auto;
 
-  @media (max-width: 1110px) {
+  @media (max-width: 1024px) {
     padding: 0 3%;
   }
 
@@ -68,16 +68,46 @@ a {
 .header-xl {
   font-size: var(--font-hero);
 }
+/***************************Flags**************************/
+.language-selector {
+  display: inline-block;
+  position: relative;
+}
+
+
+.language-icon {
+  width: 24px;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s ease;
+  z-index:-1;
+}
+
+.frenchFlag{
+  z-index: 10;
+}
+
+
+
 
 /***************************Hero***************************/
 
 .hero {
   position: relative;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   margin-top: -2rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 }
+
+
 
 @media (min-width: 1750px) {
   .overflow-text {
@@ -87,16 +117,26 @@ a {
 .hero-about {
   width: 50%;
   margin: 2rem 0 5rem 0;
+  
 }
 
 .hero-img {
-  margin-left: -80px;
-  z-index: -1;
+  z-index: -2;
+  position: relative;
+  right: 3rem;
+  align-self: flex-start;
 }
 
 .hero-text {
+  position: relative;
+  left: 3rem;
   text-align: left;
+  min-width: 850px;
 }
+span {
+  white-space: nowrap;
+}
+
 
 .contact-me {
   border-bottom: solid 2px #72b726;
@@ -249,6 +289,8 @@ a {
   margin: 0 1rem;
 }
 
+
+
 .projects-tags {
   display: flex;
   justify-content: left;
@@ -269,24 +311,14 @@ a {
   background-color: var(--dark-gray);
 }
 
-.wrapper.contact {
-  width: 100%;
-  padding: 5% 17.5%;
-  margin: auto;
 
-  @media (max-width: 1110px) {
-    padding: 0 3%;
-  }
-
-  @media (max-width: 700px) {
-    padding: 0 2.8%;
-  }
-}
 
 .contact {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
+  padding: 5% 17.5%;
 }
 
 .contact-text {
@@ -295,21 +327,24 @@ a {
   justify-content: left;
   align-items: flex-start;
   gap: 0px;
-  max-width: 47%;
+  /* max-width: 47%; */
 }
 
 .contact-form {
   min-width: 45%;
 }
 
-.contact-text h1 {
+.contact-title {
   margin: 0;
 }
 
-.fa {
-  margin: 1rem;
-  margin-left: 0;
+.contact-icon{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
 }
+
 
 .number {
   font-size: 2rem;
@@ -401,6 +436,10 @@ i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.overlay:hover{
+  opacity: 1;
 }
 
 .overlay-text {

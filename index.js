@@ -1,13 +1,24 @@
-const imageContainers = document.querySelectorAll(".image-container");
 
-imageContainers.forEach((container) => {
-  const overlay = container.querySelector(".overlay");
-
-  container.addEventListener("mouseenter", () => {
-    overlay.style.opacity = "1";
+document
+  .getElementById("frenchFlag")
+  .addEventListener("click", function (event) {
+    toggleDropdown(); 
   });
 
-  container.addEventListener("mouseleave", () => {
-    overlay.style.opacity = "0";
-  });
-});
+
+function toggleDropdown() {
+  const dropdown = document.querySelector(".dropdown");
+
+  if (dropdown.style.top === "0px") {
+    dropdown.style.top = "100%";
+    setTimeout(function () {
+      dropdown.style.zIndex = "1";
+    }, 500);
+    
+  } else {
+    dropdown.style.zIndex = "-1";
+    dropdown.style.top = "0";
+
+  }
+}
+

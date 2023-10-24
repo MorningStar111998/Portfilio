@@ -1,0 +1,152 @@
+@media (max-width: 480px) {
+  /***************************Hero***************************/
+
+  .hero-logo-link {
+    display: block;
+  }
+
+  div.flexbox-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  a.flexbox-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img.logo {
+    display: none;
+  }
+
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    /* width: 100%; */
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: center;
+    position: static;
+    min-width: 100%;
+  }
+
+  .hero-about {
+    width: 100%;
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .hero-img {
+    order: 0;
+    position: static;
+    /* left: 0; */
+    width: 100%;
+  }
+
+  .hero-greeting {
+    text-align: center;
+  }
+  .wrapper {
+    width: 95%;
+  }
+
+  /*------------------------Skills------------------------*/
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  .skills-item h3 {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* .skills > div:nth-child(2n) {
+  text-align: right;
+} */
+
+  /*------------------------Projects------------------------*/
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .projects-item {
+    flex: 1 1 0;
+    margin: 1rem 1rem;
+  }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.overlay-text {
+  text-align: center;
+}
+
+  /**************************contact*****************/
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+
+  }
+
+
+
+  .contact-title{
+    padding-top: 2rem;
+
+  }
+
+  .contact-title.underline {
+    border-bottom: none;
+  }
+
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 0px;
+  }
+  .contact-form {
+    width: 100%;
+    padding-bottom: 2rem;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper.contact {
+    padding: 0 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper.contact {
+    padding: 0 2.8%;
+  }
+}
