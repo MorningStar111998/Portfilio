@@ -3,7 +3,7 @@
   --bg-body2: #242424;
   --black: #151515;
   --dark-gray: #242424;
-  --green: #72b726;
+  --green: #02c302;
   --gray: #d9d9d9;
   --purple: #6e07f3;
   --dark-blue: #0d2438;
@@ -97,6 +97,23 @@ a {
 
 
 /***************************Hero***************************/
+#spining-circle{
+  position: absolute;
+  right: 80%;
+  z-index: -2;
+  width: 40%;
+  /* transform: translate(-50%, -50%); */
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .hero {
   position: relative;
@@ -139,7 +156,7 @@ span {
 
 
 .contact-me {
-  border-bottom: solid 2px #72b726;
+  border-bottom: solid 2px var(--green);
   padding-bottom: 5px;
   text-transform: uppercase;
 }
@@ -150,7 +167,7 @@ span {
 }
 
 .underline {
-  border-bottom: #72b726 solid 5px;
+  border-bottom: var(--green) solid 5px;
 }
 
 /*------------------------Skills------------------------*/
@@ -194,15 +211,15 @@ span {
 .skills-bar .html {
   width: 95%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
 .skills-bar .css {
-  width: 85%;
+  width: 90%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -210,7 +227,7 @@ span {
 .skills-bar .javascript {
   width: 80%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -218,7 +235,7 @@ span {
 .skills-bar .php {
   width: 70%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -226,7 +243,7 @@ span {
 .skills-bar .nodejs {
   width: 60%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -234,7 +251,7 @@ span {
 .skills-bar .photoshop {
   width: 80%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -242,7 +259,7 @@ span {
 .skills-bar .mysql {
   width: 90%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -250,7 +267,7 @@ span {
 .skills-bar .jquery {
   width: 70%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -258,7 +275,7 @@ span {
 .skills-bar .wordpress {
   width: 70%;
   height: 100%;
-  background-color: #72b726;
+  background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -389,7 +406,7 @@ textarea:focus:required:invalid {
 
 input:required:valid:focus,
 textarea:required:valid:focus {
-  outline-color: #72b726;
+  outline-color: var(--green);
 }
 
 .btn {
@@ -397,12 +414,12 @@ textarea:required:valid:focus {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  border-bottom: solid 2px #72b726;
+  border-bottom: solid 2px var(--green);
   padding-bottom: 5px;
 }
 
 i:hover {
-  color: #72b726;
+  color: var(--green);
 }
 
 /**************************fotter*****************/
@@ -415,7 +432,7 @@ i:hover {
 }
 
 .header-social:hover svg path {
-  fill: #72b726;
+  fill: var(--green);
 }
 
 /***********************hover projects******************/
@@ -450,7 +467,7 @@ i:hover {
 .view-project {
   text-decoration: none;
   color: white;
-  background-color: #72b726;
+  background-color: var(--green);
   padding: 10px 20px;
   margin: 10px;
   border-radius: 5px;
