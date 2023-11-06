@@ -56,10 +56,18 @@
   }
 
   /*------------------------Skills------------------------*/
+
   .skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+  }
+
+  .skill-text{
+    width: 100%;
+  }
+  .projet-text{
+    width: 100%;
   }
 
   .skills-item h3 {

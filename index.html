@@ -24,6 +24,7 @@
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -136,8 +137,10 @@
         </nav>
       </div>
     </header>
+    
     <main class="main-section">
-      <!-- Hero section -->
+
+      <!------------ Hero section ------------>
       <section class="hero bottom-border wrapper">
         <div class="hero-text">
           <img
@@ -146,24 +149,14 @@
             alt="cercle noir en rotation"
           />
           <h1 class="hero-greeting overflow-text header-xl">
-            Bonjour! je suis <br />
+            Bienvenue! je suis <br />
             <span class="underline"> Regis Tougouri.</span>
           </h1>
           <p class="hero-about">
-            Bonjour et bienvenue sur mon site ! Je suis un développeur web basé
-            à Marrakech, au Maroc, et ma passion est de créer des applications
-            web exceptionnelles qui enchantent les utilisateurs. Mon objectif
+            Mon objectif
             est de concevoir des expériences en ligne uniques et accessibles, où
             la forme et la fonction se rejoignent pour offrir des solutions sur
             mesure.
-            <br /><br>
-            Explorez mon portfolio pour découvrir mes réalisations et plongez
-            dans l'univers de la conception web innovante. Si vous cherchez à
-            donner vie à votre vision en ligne, je suis là pour vous aider.
-            <br /><br>
-            N'hésitez pas à me contacter pour discuter de vos projets ou à en
-            apprendre davantage sur mon travail. Merci de visiter mon site, et
-            j'espère que vous serez inspiré par ce que vous y trouverez.
           </p>
           <a class="contact-me" href="#contact">contactez moi</a>
         </div>
@@ -177,57 +170,62 @@
 
       <!-- Skills section -->
       <section class="bottom-border wrapper">
-        <h1 class="header-xl">Compétences</h1>
+        <h1 id="skill-h1" class="header-xl fade-in">Compétences</h1>
+        <p class="skill-text fade-in">
+          En tant que développeur web, je maîtrise une variété de langages de
+          programmation, de frameworks et d'outils essentiels pour la création
+          d'applications web de haute qualité.
+        </p>
         <div class="skills">
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>HTML</h3>
             <div class="skills-bar">
               <div class="html"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>CSS</h3>
             <div class="skills-bar">
               <div class="css"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>JavaScript</h3>
             <div class="skills-bar">
               <div class="javascript"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>PHP</h3>
             <div class="skills-bar">
               <div class="php"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>MySQL</h3>
             <div class="skills-bar">
               <div class="mysql"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>Node Js</h3>
             <div class="skills-bar">
               <div class="nodejs"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>Adobe Photoshop</h3>
             <div class="skills-bar">
               <div class="photoshop"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>JQuery</h3>
             <div class="skills-bar">
               <div class="jquery"></div>
             </div>
           </div>
-          <div class="skills-item">
+          <div class="skills-item fade-in">
             <h3>WordPress</h3>
             <div class="skills-bar">
               <div class="wordpress"></div>
@@ -236,11 +234,15 @@
         </div>
       </section>
 
-      <!-- Hero section -->
+      <!-- Projets section -->
       <section class="projects wrapper">
-        <h1 class="header-xl">Projets</h1>
+        <h1 id="projet-h1" class="header-xl fade-in">Projets</h1>
+        <p class="projet-text fade-in">
+          Explorez la section Projets pour découvrir mes réalisations et plongez
+          dans l'univers de la conception web innovante.
+        </p>
         <div class="projects-grid">
-          <div class="projects-item">
+          <div class="projects-item fade-in">
             <div class="image-container">
               <picture>
                 <source
@@ -278,7 +280,7 @@
               <span class="tags">PHP</span>
             </p>
           </div>
-          <div class="projects-item">
+          <div class="projects-item fade-in">
             <div class="image-container">
               <picture>
                 <source
@@ -315,7 +317,7 @@
               <span class="tags">CSS</span>
             </p>
           </div>
-          <div class="projects-item">
+          <div class="projects-item fade-in">
             <div class="image-container">
               <picture>
                 <source
@@ -359,7 +361,7 @@
               <span class="tags">Express Js</span>
             </p>
           </div>
-          <div class="projects-item">
+          <div class="projects-item fade-in">
             <div class="image-container">
               <picture>
                 <source
@@ -400,16 +402,18 @@
       </section>
 
       <!-- Contact section -->
-      <section class="contact wrapper bg-less-dark">
+      <section id="contact" class="contact wrapper bg-less-dark">
         <div class="contact-text">
-          <h1 class="header-xl contact-title underline">Contact</h1>
-          <p>
-            J’aimerais entendre parler de votre projet et de la manière dont je
-            pourrais vous aider. Veuillez remplir le formulaire et je vous
-            répondrai dans les plus brefs délais.
+          <h1 class="header-xl contact-title underline fade-in">Contact</h1>
+          <p class="fade-in">
+            N'hésitez pas à me contacter pour discuter de vos projets ou à en
+            apprendre davantage sur mon travail. Merci d'avoir visité mon site.
+            <br />
+            Veuillez remplir le formulaire et je vous répondrai dans les plus
+            brefs délais.
           </p>
-          <p class="number">+212-609-295204</p>
-          <p class="contact-icon">
+          <p class="number fade-in">+212-609-295204</p>
+          <p class="contact-icon fade-in">
             <a href="https://github.com/MorningStar111998" target="_blank"
               ><i class="fa fa-github fa-2x"></i
             ></a>
@@ -423,12 +427,12 @@
             ></a>
           </p>
         </div>
-        <div class="contact-form">
+        <div class="contact-form fade-in">
           <form
             method="post"
             action="https://formsubmit.co/daee3590a8986184ae7f2108b60d7a9b"
           >
-            <input id="nom" required type="text" name="nom" placeholder="nom" />
+            <input id="nom" required type="text" name="nom" placeholder="nom" autocomplete="given-name" />
             <input type="hidden" name="_subject" value="Message Portfilio!" />
             <input
               id="email"
@@ -436,6 +440,7 @@
               type="email"
               name="email"
               placeholder="email"
+              autocomplete="email" 
             />
             <input
               type="hidden"
