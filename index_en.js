@@ -1,9 +1,7 @@
 $(document).ready(function () {
-  document.addEventListener("DOMContentLoaded", function () {
     document
       .getElementById("englishFlag")
       .addEventListener("click", function (event) {
-        // event.preventDefault();
         toggleDropdown();
       });
 
@@ -20,7 +18,7 @@ $(document).ready(function () {
         dropdown.style.top = "0";
       }
     }
-  });
+  
 
   const faders = document.querySelectorAll(".fade-in");
   options = {
@@ -37,6 +35,9 @@ $(document).ready(function () {
       } else {
         entry.target.classList.add("appear");
         appearOnScroll.unobserve(entry.target);
+        if (entry.target.classList.contains("skill-per")) {
+          entry.target.classList.add("fill-bar-animation");
+        }
       }
     });
   },

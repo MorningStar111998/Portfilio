@@ -209,76 +209,51 @@ span {
   border-radius: 5px;
 }
 
-.skills-bar .html {
-  width: 95%;
+.skill-per {
   height: 100%;
   background-color: var(--green);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  position: relative;
 }
 
-.skills-bar .css {
-  width: 90%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.fill-bar-animation{
+  animation: fill-bar 2s 1;
 }
 
-.skills-bar .javascript {
-  width: 80%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  bottom: 150%;
+  right: 0;
+  transform: translateX(50%);
+  padding: 2px;
+  border-radius: 5px;
 }
 
-.skills-bar .php {
-  width: 70%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.skill-per::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  bottom: 130%;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  z-index: -1;
+  border-radius: 2px;
 }
 
-.skills-bar .nodejs {
-  width: 60%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
+@keyframes fill-bar {
+  from {
+    width: 0;
+  }
 
-.skills-bar .photoshop {
-  width: 80%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.skills-bar .mysql {
-  width: 90%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.skills-bar .jquery {
-  width: 70%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.skills-bar .wordpress {
-  width: 70%;
-  height: 100%;
-  background-color: var(--green);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  to {
+    width: 100%;
+  }
 }
 
 /*------------------------Projects------------------------*/

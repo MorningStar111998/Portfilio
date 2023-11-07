@@ -34,6 +34,12 @@ $(document).ready(function () {
       } else {
         entry.target.classList.add("appear");
         appearOnScroll.unobserve(entry.target);
+        if (entry.target.classList.contains("skill-per")) {
+          entry.target.classList.add("fill-bar-animation");
+        }
+
+        // const skillBar = $(".skill-per");
+        // skillBar.addClass("fill-bar-animation");
       }
     });
   },
