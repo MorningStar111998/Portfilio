@@ -57,7 +57,7 @@ $(document).ready(function () {
             scrollTop: target.offset().top,
           },
           700
-        ); // You can adjust the duration for a faster or slower scroll
+        );
       }
     });
   });

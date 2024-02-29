@@ -38,8 +38,7 @@ $(document).ready(function () {
           entry.target.classList.add("fill-bar-animation");
         }
 
-        // const skillBar = $(".skill-per");
-        // skillBar.addClass("fill-bar-animation");
+
       }
     });
   },
@@ -59,7 +58,7 @@ $(document).ready(function () {
             scrollTop: target.offset().top,
           },
           700
-        ); // You can adjust the duration for a faster or slower scroll
+        ); 
       }
     });
   });
